@@ -1,7 +1,12 @@
-import "./App.css";
+import "./styles/main.sass";
+import Container from "./components/Container/Container";
 
 function App() {
-  return <div className="App">Hola</div>;
+  return (
+    <div className="App">
+      <Container />
+    </div>
+  );
 }
 
 export default App;
