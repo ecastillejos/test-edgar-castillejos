@@ -1,0 +1,21 @@
+#ftr-cnt
+    @include flex-container(40px,100vw, center)
+    background-color: $footer-background
+    position: fixed
+    bottom: 0
+    @include typo($font-size, $background)
+    #ftr-elems
+        @include flex-container(auto,70vw, space-between)
+        @media only screen and (max-width: $max-small)
+            @include flex-container(auto,90vw, space-between)
+        div
+            height: 100%
+            display: flex
+            justify-content: space-around
+            align-items: center
+            a
+                color: $background
+                &:hover
+                    color: #d3d3d3
+                i
+                    font-size: 25px

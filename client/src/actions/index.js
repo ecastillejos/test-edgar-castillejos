@@ -19,3 +19,23 @@ export const getCities = (dispatch) => {
       console.error(e);
     });
 };
+
+export const getLikedCities = (dispatch) => {
+  dispatch({
+    type: actionType.GET_LIKED,
+  });
+};
+
+export const likeCity = (dispatch, id) => {
+  dispatch({
+    type: actionType.LIKE_CITY,
+    payload: id,
+  });
+};
+
+export const getDetails = (dispatch, id) => {
+  dispatch({
+    type: actionType.GET_DETAILS,
+    payload: id,
+  });
+};
