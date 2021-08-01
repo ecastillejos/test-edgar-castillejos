@@ -4,7 +4,7 @@ import * as action from "../../actions/index";
 
 import Footer from "../Footer/Footer";
 import Cards from "../Cards/Cards";
-import Button from "../Utilities/Button";
+import Button from "../Utilities/button";
 import Modal from "../Modal/Modal";
 
 const Container = () => {
