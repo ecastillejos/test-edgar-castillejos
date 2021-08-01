@@ -24,7 +24,7 @@ const Cards = (props) => {
         setCount((count) => count + 1);
         counter++;
       }
-    }, 5000);
+    }, 120000);
     return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cities]);
