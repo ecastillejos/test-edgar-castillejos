@@ -1,0 +1,31 @@
+#home-cnt
+    @include flex-container(auto,100vw, center)
+    #cnt
+        @media only screen and (min-width: $min-med)and(max-width: $max-med)
+            width:80vw
+            margin-bottom: 150px
+        @media only screen and (max-width: $max-small)
+            width:80vw
+            margin-bottom: 75px
+            height: 100%
+        width: 70vw
+        display: flex
+        flex-direction: column
+        align-items: center
+        #ttl-hm
+            @include typo(70px, $text-color)
+            font-weight: bold
+            height: 140px
+            div
+                position: relative
+                top: 5vh
+            @media only screen and (max-width: $max-small)
+                @include typo(50px, $text-color)
+                font-weight: bold
+                height: 140px
+                div
+                    position: relative
+                    top: 5vh
+        #cnt-bttn-like
+            @include flex-container(10vh,70vw, flex-end)
+            align-items: center

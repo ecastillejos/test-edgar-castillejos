@@ -1,9 +1,5 @@
-const express = require("express");
-const app = express();
-const routes = require("./src/routes/index.js");
+const server = require("./src/app.js");
 
-app.use("/", routes);
-
-app.listen(3001, () => {
-  console.log("listening at 3001");
+server.listen(3001, () => {
+  console.log("%s listening at 3001"); // eslint-disable-line no-console
 });

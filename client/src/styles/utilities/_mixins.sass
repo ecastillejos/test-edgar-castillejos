@@ -1,0 +1,39 @@
+@mixin typo($size, $color)
+    color: $color
+    font-family: $font-family
+    font-size: $size
+
+@mixin flex-container($size1, $size2, $justify)
+    height: $size1,
+    width: $size2
+    display: flex,
+    justify-content: $justify
+
+@mixin bttn($bckgrnd, $colortxt)
+    @media only screen and (max-width: $max-small)
+        width: 100px
+        font-size: 10px
+        height: 25px
+    width: 175px
+    height: 40px
+    border-radius: 5px
+    border: 2px solid $blue
+    box-shadow: -2px 2px 2px #a3a3a3
+    background-color: $bckgrnd
+    color: $colortxt
+    font-size: 15px
+    &:hover
+        background-color: #3dd2ff
+        color: white
+        cursor: pointer
+    &:active
+        background-color: $blue
+
+@mixin to-like($color)
+    color: $color
+    border: none
+    &:hover
+        color: #3dd2ff
+        cursor: pointer
+    &:active
+        color: $blue

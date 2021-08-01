@@ -1,0 +1,40 @@
+@import "../utilities/variables"
+
+#ncard-cnt
+    opacity: 0
+    visibility: hidden
+    transition: opacity 500ms linear, visibility 0s linear 500ms
+#card-cnt
+    width: 100%
+    height: 200px
+    background-color: $card-background
+    border: 1px solid #e7e7e7
+    border-radius: 2px
+    display: flex
+    flex-direction: column
+    align-items: center
+    opacity: 1
+    visibility: visible
+    transition: transform .2s, opacity 500ms linear, visibility 0s linear
+    @media only screen and (max-width: $max-small)
+        margin-bottom: 20px
+    &:hover
+        transform: scale(1.05)
+        box-shadow: -0.5px 0.5px 10px #c2c2c2
+    #img-crd-cnt
+        margin-top: 5%
+        width: 90%
+        height: 80%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    #ttl-like-cnt
+        @include flex-container(15%,90%, space-between)
+        align-items: center
+        #ttl-crd
+            @include typo(12px, $text-color)
+        #like-crd
+            @include to-like(#45454566)
+        #nlike-crd
+            @include to-like($blue)
